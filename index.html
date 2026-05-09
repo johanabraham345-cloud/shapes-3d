@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .materials-carousel-wrapper { width: 100%; overflow-x: auto; padding-bottom: 20px; scrollbar-width: thin; scrollbar-color: var(--primary-cyan) var(--bg-dark); }
+        .materials-carousel-wrapper::-webkit-scrollbar { height: 8px; }
+        .materials-carousel-wrapper::-webkit-scrollbar-track { background: var(--bg-dark); border-radius: 10px; }
+        .materials-carousel-wrapper::-webkit-scrollbar-thumb { background: var(--primary-cyan); border-radius: 10px; }
+        .materials-carousel { display: flex; gap: 20px; width: max-content; }
+        .carousel-card { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 20px; width: 320px; overflow: hidden; flex-shrink: 0; transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
+        .carousel-card:hover { transform: translateY(-5px); border-color: var(--primary-cyan); box-shadow: 0 15px 30px rgba(6, 182, 212, 0.1); }
+        .c-image { position: relative; width: 100%; height: 200px; overflow: hidden; }
+        .img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+        .c-tag { position: absolute; top: 15px; right: 15px; background: rgba(6, 182, 212, 0.2); color: var(--primary-cyan); padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; backdrop-filter: blur(5px); border: 1px solid rgba(6, 182, 212, 0.3); }
+        .c-info { padding: 24px; }
+        .c-category { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+        .c-info h3 { margin: 8px 0; font-size: 1.3rem; }
+        .c-rating { color: #ffb400; font-size: 0.8rem; margin-bottom: 15px; }
+        .c-rating i { margin-right: 2px; }
+        .c-price { font-size: 1.1rem; font-weight: 600; color: var(--text-main); }
+        .review-photos { display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap; }
+        .review-photos img { width: 70px; height: 70px; border-radius: 8px; object-fit: cover; border: 1px solid var(--border-light); transition: transform 0.2s; }
+        .review-photos img:hover { transform: scale(1.05); }
+    </style>
 </head>
 <body>
     <div class="background-effects">
@@ -172,35 +193,35 @@
             </div>
             <div class="works-grid">
                 <div class="work-item fade-in-up">
-                    <img src="assets/work1.png" alt="3D Printed Prototype Parts">
+                    <img src="work1.png" alt="3D Printed Prototype Parts">
                     <div class="work-overlay">
                         <h4>Prototyping Parts</h4>
                         <span>FDM / White PLA</span>
                     </div>
                 </div>
                 <div class="work-item fade-in-up">
-                    <img src="assets/work2.png" alt="3D Printed T-Rex Skull">
+                    <img src="work2.png" alt="3D Printed T-Rex Skull">
                     <div class="work-overlay">
                         <h4>T-Rex Skull Replica</h4>
                         <span>SLA / High Detail Resin</span>
                     </div>
                 </div>
                 <div class="work-item fade-in-up">
-                    <img src="assets/work3.png" alt="Industrial Bracket">
+                    <img src="work3.png" alt="Industrial Bracket">
                     <div class="work-overlay">
                         <h4>Industrial Bracket</h4>
                         <span>SLS / Tough Nylon</span>
                     </div>
                 </div>
                 <div class="work-item fade-in-up">
-                    <img src="assets/work4.png" alt="Porsche Model">
+                    <img src="work4.png" alt="Porsche Model">
                     <div class="work-overlay">
                         <h4>Porsche Scale Model</h4>
                         <span>SLA / Black Resin</span>
                     </div>
                 </div>
                 <div class="work-item fade-in-up">
-                    <img src="assets/work5.png" alt="TPU Tires">
+                    <img src="work5.png" alt="TPU Tires">
                     <div class="work-overlay">
                         <h4>Flexible Tires</h4>
                         <span>FDM / Red TPU</span>
@@ -268,8 +289,8 @@
                     </div>
                     <p>"It's a fabulous Art 3d printing i requested to make the own design the person have put a lot of effort and made the print to come exactly I need thankyou for shap3d innoFab for the product..."</p>
                     <div class="review-photos">
-                        <img src="assets/athul_photo_1.jpg" alt="Athul review photo 1">
-                        <img src="assets/athul_photo_2.jpg" alt="Athul review photo 2">
+                        <img src="athul_photo_1.jpg" alt="Athul review photo 1">
+                        <img src="athul_photo_2.jpg" alt="Athul review photo 2">
                     </div>
                 </div>
 
@@ -306,10 +327,10 @@
                     </div>
                     <p>"We had an urgent requirement for our project. Shapes 3D helped us with good quality and on‑time delivery. If you have a tight deadline for your project Shape 3D is your go‑to manufacturing partner."</p>
                     <div class="review-photos">
-                        <img src="assets/vishnu_photo_1.jpg" alt="Vishnu review photo 1">
-                        <img src="assets/vishnu_photo_2.jpg" alt="Vishnu review photo 2">
-                        <img src="assets/vishnu_photo_3.jpg" alt="Vishnu review photo 3">
-                        <img src="assets/vishnu_photo_4.jpg" alt="Vishnu review photo 4">
+                        <img src="vishnu_photo_1.jpg" alt="Vishnu review photo 1">
+                        <img src="vishnu_photo_2.jpg" alt="Vishnu review photo 2">
+                        <img src="vishnu_photo_3.jpg" alt="Vishnu review photo 3">
+                        <img src="vishnu_photo_4.jpg" alt="Vishnu review photo 4">
                     </div>
                 </div>
 
