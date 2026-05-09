@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes3D InnoFab - 3D Printing, CAD & Training</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-cube"></i> Shapes3D
+            </div>
+            <div class="nav-links hidden-mobile">
+                <a href="#services">Services</a>
+                <a href="#materials">Materials</a>
+                <a href="#works">Works</a>
+                <a href="#location">Location</a>
+            </div>
+            <a href="quote.html" class="btn btn-primary btn-sm">Get Instant Quote</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section (From Reference Images) -->
+        <section class="hero-classic">
+            <div class="hero-graphics">
+                <div class="circle circle-1"></div>
+                <div class="circle circle-2"></div>
+                <div class="circle circle-3"></div>
+                <div class="circle circle-4"></div>
+                <div class="circle circle-5"></div>
+            </div>
+            <h1>Bringing Ideas to Reality<br>with 3D Tech</h1>
+            <p>Comprehensive solutions from initial CAD modeling to high-quality physical prototypes and expert training workshops.</p>
+            <div class="hero-cta">
+                <a href="#materials" class="btn btn-primary btn-lg">
+                    Explore Services <span class="arrow-icon">↘</span>
+                </a>
+                <a href="quote.html" class="btn btn-dark btn-lg">
+                    Get Quote <span class="arrow-icon">↘</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="section-header">
+                <h2>Our Core Specialties</h2>
+                <p>We provide a full ecosystem of 3D solutions, from concept to final product.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in-up">
+                    <div class="s-icon"><i class="fa-solid fa-print"></i></div>
+                    <div class="s-content">
+                        <h3>3D Printing</h3>
+                        <p>High-precision FDM, SLA, and SLS printing using industrial-grade polymers and resins.</p>
+                        <a href="quote.html" class="s-link">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card fade-in-up">
+                    <div class="s-icon"><i class="fa-solid fa-bezier-curve"></i></div>
+                    <div class="s-content">
+                        <h3>CAD Modelling</h3>
+                        <p>Professional 3D modeling, reverse engineering, and product design optimization.</p>
+                        <a href="#location" class="s-link">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card fade-in-up">
+                    <div class="s-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <div class="s-content">
+                        <h3>Training Workshops</h3>
+                        <p>Hands-on sessions covering 3D printing basics, slicer software, and CAD fundamentals.</p>
+                        <a href="#location" class="s-link">Join a Workshop <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Materials Section (Techy) -->
+        <section id="materials" class="materials-section">
+            <div class="section-header">
+                <h2>Advanced Filaments & Resins</h2>
+                <p>We stock engineering-grade materials suited for everything from rapid prototyping to end-use production parts.</p>
+            </div>
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="mat-icon fdm-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3>PLA & PETG Pro</h3>
+                    <p class="tech">Technology: FDM</p>
+                    <p>Perfect for rapid prototyping, concept models, and low-stress functional parts. Wide range of colors available.</p>
+                    <ul class="mat-features">
+                        <li>Cost-effective</li>
+                        <li>High dimensional accuracy</li>
+                    </ul>
+                </div>
+                <div class="material-card">
+                    <div class="mat-icon sla-icon"><i class="fa-solid fa-droplet"></i></div>
+                    <h3>Tough & Clear Resin</h3>
+                    <p class="tech">Technology: SLA</p>
+                    <p>Isotropic properties with incredibly smooth surface finishes. Ideal for injection mold prototypes and optical parts.</p>
+                    <ul class="mat-features">
+                        <li>Smooth surface finish</li>
+                        <li>High detail resolution</li>
+                    </ul>
+                </div>
+                <div class="material-card">
+                    <div class="mat-icon sls-icon"><i class="fa-brands fa-mixcloud"></i></div>
+                    <h3>Nylon (PA12) & TPU</h3>
+                    <p class="tech">Technology: SLS</p>
+                    <p>No support structures needed. Creates highly complex geometries with excellent mechanical strength and flexibility.</p>
+                    <ul class="mat-features">
+                        <li>High strength</li>
+                        <li>Complex geometries</li>
+                    </ul>
+                </div>
+                <div class="material-card featured">
+                    <div class="mat-icon cf-icon"><i class="fa-solid fa-atom"></i></div>
+                    <h3>Carbon Fiber PA</h3>
+                    <p class="tech">Technology: FDM / SLS</p>
+                    <p>Carbon fiber reinforced nylon. Replaces machined aluminum parts with exceptionally high stiffness-to-weight ratio.</p>
+                    <ul class="mat-features">
+                        <li>Metal-replacement</li>
+                        <li>Extreme rigidity</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works / Portfolio Section -->
+        <section id="works" class="works-section">
+            <div class="section-header">
+                <h2>Our Recent Works</h2>
+                <p>Take a look at some of the high-quality 3D prints we've delivered recently.</p>
+            </div>
+            <div class="works-grid">
+                <div class="work-item fade-in-up">
+                    <img src="assets/work1.png" alt="3D Printed Prototype Parts">
+                    <div class="work-overlay">
+                        <h4>Prototyping Parts</h4>
+                        <span>FDM / White PLA</span>
+                    </div>
+                </div>
+                <div class="work-item fade-in-up">
+                    <img src="assets/work2.png" alt="3D Printed T-Rex Skull">
+                    <div class="work-overlay">
+                        <h4>T-Rex Skull Replica</h4>
+                        <span>SLA / High Detail Resin</span>
+                    </div>
+                </div>
+                <div class="work-item fade-in-up">
+                    <img src="assets/work3.png" alt="Industrial Bracket">
+                    <div class="work-overlay">
+                        <h4>Industrial Bracket</h4>
+                        <span>SLS / Tough Nylon</span>
+                    </div>
+                </div>
+                <div class="work-item fade-in-up">
+                    <img src="assets/work4.png" alt="Porsche Model">
+                    <div class="work-overlay">
+                        <h4>Porsche Scale Model</h4>
+                        <span>SLA / Black Resin</span>
+                    </div>
+                </div>
+                <div class="work-item fade-in-up">
+                    <img src="assets/work5.png" alt="TPU Tires">
+                    <div class="work-overlay">
+                        <h4>Flexible Tires</h4>
+                        <span>FDM / Red TPU</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Reviews Section (Techy) -->
+        <section id="reviews" class="reviews-section">
+            <div class="google-badge-container">
+                <div class="google-badge">
+                    <div class="g-logo"><i class="fa-brands fa-google"></i></div>
+                    <div class="g-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span><strong>4.9</strong>/5.0 based on 342 verified reviews</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="reviewer">
+                        <div class="r-avatar">A</div>
+                        <div class="r-info">
+                            <h4>Alex Rivet</h4>
+                            <span class="date">2 weeks ago</span>
+                        </div>
+                        <i class="fa-brands fa-google r-icon"></i>
+                    </div>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"PrintForge changed our prototyping speed entirely. Fantastic quality on the Carbon Fiber parts. They even caught a design flaw before printing. 10/10."</p>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer">
+                        <div class="r-avatar bg-blue">S</div>
+                        <div class="r-info">
+                            <h4>Sarah Chen</h4>
+                            <span class="date">1 month ago</span>
+                        </div>
+                        <i class="fa-brands fa-google r-icon"></i>
+                    </div>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"The precision on small features using their SLA resin is mind-blowing. Highly recommended for jewelry casting prototypes."</p>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer">
+                        <div class="r-avatar bg-green">M</div>
+                        <div class="r-info">
+                            <h4>Marcus Vane, CTO</h4>
+                            <span class="date">3 months ago</span>
+                        </div>
+                        <i class="fa-brands fa-google r-icon"></i>
+                    </div>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"We used them for a batch run of 500 TPU gaskets. Reliable scaling, consistent tolerances, and professional support for every project we run."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section (Techy) -->
+        <section id="location" class="location-section">
+            <div class="location-container glass-panel">
+                <div class="location-info">
+                    <h2>Visit Shapes3D InnoFab</h2>
+                    <p>Your trusted 3D Printing Solution. Local pickup available.</p>
+                    
+                    <div class="contact-details">
+                        <div class="c-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Shapes3D InnoFab<br>Kochi, Kerala, India</p>
+                            </div>
+                        </div>
+                        <div class="c-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Contact</h4>
+                                <p>quotes@shapes3d.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15715.42!2d76.2860175!3d10.0431199!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080da4d08f7e55%3A0xccf359164bcc4a4c!2sShapes3D+InnoFab+%7C+3D+Printing+Solution!5e0!3m2!1sen!2sus!4v1" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(100%);" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                    <div class="map-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="f-brand">
+                <div class="logo"><i class="fa-solid fa-cube"></i> Shapes3D</div>
+                <p>Your trusted 3D Printing Solution, CAD Modeling, and Training Hub.</p>
+            </div>
+            <div class="f-links">
+                <h4>Company</h4>
+                <a href="#services">Services</a>
+                <a href="quote.html">Get a Quote</a>
+                <a href="#location">Contact Us</a>
+            </div>
+        </div>
+        <div class="f-bottom">
+            <p>&copy; 2026 Shapes3D InnoFab. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
