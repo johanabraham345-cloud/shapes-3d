@@ -257,69 +257,81 @@ section { padding: 100px 5%; max-width: 1400px; margin: 0 auto; }
 .s-link:hover { color: var(--primary-cyan); }
 .s-link:hover i { transform: translateX(5px); }
 
-/* Materials */
-.materials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+/* Materials Carousel */
+.materials-carousel-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-cyan) var(--bg-dark);
 }
-.material-card {
+.materials-carousel-wrapper::-webkit-scrollbar { height: 8px; }
+.materials-carousel-wrapper::-webkit-scrollbar-track { background: var(--bg-dark); border-radius: 10px; }
+.materials-carousel-wrapper::-webkit-scrollbar-thumb { background: var(--primary-cyan); border-radius: 10px; }
+
+.materials-carousel {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+}
+.carousel-card {
     background: var(--bg-card);
     border: 1px solid var(--border-light);
-    border-radius: 24px;
-    padding: 40px 30px;
-    transition: all 0.3s ease;
-    position: relative;
+    border-radius: 20px;
+    width: 320px;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
-.material-card:hover {
-    transform: translateY(-10px);
+.carousel-card:hover {
+    transform: translateY(-5px);
     border-color: var(--primary-cyan);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 15px 30px rgba(6, 182, 212, 0.1);
 }
-.material-card.featured {
-    background: linear-gradient(to bottom right, #111827, #0f172a);
-    border-color: rgba(6, 182, 212, 0.4);
+.c-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
 }
-.material-card.featured::before {
-    content: "POPULAR";
-    position: absolute;
-    top: 15px; right: 20px;
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: var(--primary-cyan);
-    letter-spacing: 1px;
-}
-.mat-icon {
-    width: 60px; height: 60px;
-    border-radius: 16px;
-    background: rgba(255,255,255,0.05);
+.img-placeholder {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.8rem;
-    margin-bottom: 24px;
 }
-.fdm-icon { color: #f59e0b; }
-.sla-icon { color: #3b82f6; }
-.sls-icon { color: #10b981; }
-.cf-icon { color: #06b6d4; }
-.material-card h3 { font-size: 1.4rem; margin-bottom: 5px; }
-.tech { font-size: 0.85rem; color: var(--primary-cyan); margin-bottom: 16px; font-weight: 600; }
-.material-card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; }
-.mat-features { list-style: none; }
-.mat-features li {
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
-}
-.mat-features li::before {
-    content: "\f00c";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
+.c-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(6, 182, 212, 0.2);
     color: var(--primary-cyan);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+}
+.c-info { padding: 24px; }
+.c-category {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.c-info h3 { margin: 8px 0; font-size: 1.3rem; }
+.c-rating {
+    color: #ffb400;
     font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+.c-rating i { margin-right: 2px; }
+.c-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
 }
 
 /* Works Section */
@@ -409,6 +421,23 @@ section { padding: 100px 5%; max-width: 1400px; margin: 0 auto; }
 .r-icon { position: absolute; right: 0; top: 0; color: #4285F4; font-size: 1.5rem; }
 .review-card .stars { color: #FBBC05; margin-bottom: 12px; }
 .review-card p { font-size: 0.95rem; font-style: italic; }
+.review-photos {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.review-photos img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid var(--border-light);
+    transition: transform 0.2s;
+}
+.review-photos img:hover {
+    transform: scale(1.05);
+}
 
 /* Location */
 .location-container {
